@@ -1,0 +1,132 @@
+body{
+    margin: 0 auto;
+    background-color: #a67859;/*this is greyorange*/
+    width: 100%;
+    font-family: 'Neuton', serif;
+}
+
+/**************start of nav bar*****************/
+.nav-bar{
+    height: 50px;
+    width:100%;
+    background-color: #e67300; /*this is orange*/
+    position:fixed;
+    top:0
+}
+
+.logo{
+    height: 48px;
+    width: 48px;
+    float:left;
+    margin-top: 1px;
+    padding-left: 9px;
+}
+
+.nav-list{
+    list-style-type: none;
+    float:right;
+    margin: 0px 0px 0px 10px;
+    height: 50px
+}
+
+.list-item{
+    display:inline-block;
+    margin-left: 9px;
+    margin-top: 1px;
+    border: 2px solid #ffffff; /*this is white*/
+    border-radius: 4px;
+    padding: 2px 5px 2px 5px;
+}
+.list-item:hover {
+    background-color: #ffffff; /*this is white*/
+    border-color: #000000; /*this is black*/
+    -ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Safari */
+    transform: rotate(-15deg);
+}
+.list-item a:hover{
+    color:#e67300;
+}
+.list-item a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/**************end of nav bar*****************/
+/**************start of hero*****************/
+.hero{
+    background-image:url('../image/farmhousetable.jpeg'); 
+ /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+    height: 700px;
+    width: 100%;
+    margin-top: 50px;
+    position:relative;
+    z-index: -1;
+}
+.herobackground{
+    background-color:#e67300;
+    border: 2px dashed;
+    position: absolute;
+    bottom:150px;
+    margin-right: 5px;
+    border-radius: 4px;
+    
+    
+}
+.herotext{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    
+}
+/*start of main*/
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-flow:row wrap;
+    background-color: #e2cebe;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 1000px;
+    position: relative;
+    margin-bottom: 70px
+}
+
+.box{
+    flex-basis: auto;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: #e67300;
+    width:45%;
+    min-width: 300px;
+    margin: auto;
+    min-height: 300px;
+    max-height: 700px;
+}
+.concrete{
+    max-width: 30%;
+    height: auto;
+}
+/*end of main*/
+/*start of footer*/
+.footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: Space-around;
+    height:50px;
+    margin:0px;
+    background-color: #e67300;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+.footer-col{
+    flex-basis: auto;
+}
+.copyright{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/*end of footer*/
