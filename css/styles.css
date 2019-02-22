@@ -8,29 +8,30 @@ body{
 /**************start of nav bar*****************/
 .nav-bar{
     height: 50px;
-    width:100%;
+    width: 100%;
     background-color: #e67300; /*this is orange*/
-    position:fixed;
-    top:0
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .logo{
     height: 48px;
     width: 48px;
-    float:left;
+    float: left;
     margin-top: 1px;
     padding-left: 9px;
 }
 
 .nav-list{
     list-style-type: none;
-    float:right;
-    margin: 0px 0px 0px 10px;
+    float: right;
+    margin: 10px 5px 0px 10px;
     height: 50px
 }
 
 .list-item{
-    display:inline-block;
+    display: inline-block;
     margin-left: 9px;
     margin-top: 1px;
     border: 2px solid #ffffff; /*this is white*/
@@ -45,7 +46,7 @@ body{
     transform: rotate(-15deg);
 }
 .list-item a:hover{
-    color:#e67300;
+    color: #e67300;
 }
 .list-item a{
     text-decoration: none;
@@ -56,22 +57,22 @@ body{
 /**************start of hero*****************/
 .hero{
     background-image:url('../image/farmhousetable.jpeg'); 
- /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-    height: 700px;
+    background-repeat: no-repeat;
+    height: 500px;
     width: 100%;
     margin-top: 50px;
-    position:relative;
+    position: relative;
     z-index: -1;
 }
+    
 .herobackground{
-    background-color:#e67300;
+    background-color: #e67300;
     border: 2px dashed;
     position: absolute;
-    bottom:150px;
+    padding: 5px;
+    bottom: 320px;
     margin-right: 5px;
+    margin-left: 10px;
     border-radius: 4px;
     
     
@@ -85,29 +86,60 @@ body{
 .main{
     display: flex;
     flex-direction: row;
-    flex-flow:row wrap;
-    background-color: #e2cebe;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 1000px;
+    flex-wrap: wrap;
+    background-color: #C0ABA6;
+    align-content: space-around;
+    /*align-items: flex-start;*/
     position: relative;
-    margin-bottom: 70px
+    margin-bottom: 35px
 }
 
 .box{
-    flex-basis: auto;
     border: 2px solid;
     border-radius: 4px;
     border-color: #e67300;
     width:45%;
     min-width: 300px;
-    margin: auto;
+    margin: 10px auto 10px auto;
     min-height: 300px;
-    max-height: 700px;
+    /*max-height: 400px;*/
 }
-.concrete{
-    max-width: 30%;
+.boxtext{
+    font-size: 30px;
+    margin: 5px;
+}
+.biglogo{
+    width: 75%;
     height: auto;
+    margin: 0 auto;
+    padding-top: -20px;
+}
+.Biglogoimg{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.pics-container{
+    flex-grow: 1;
+    flex-basis: 150px;
+    max-width: 300px;
+    margin: 5px;
+}
+.pics{
+    display: block;
+    max-width: 100%;
+    height: auto;
+	transition: transform 350ms ease-out;
+}
+.pics:hover{
+    transform: scale(2.5);
+    text-align: center;
 }
 /*end of main*/
 /*start of footer*/
@@ -115,13 +147,14 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: Space-around;
-    height:50px;
-    margin:0px;
+    height: 35px;
+    margin: 0px;
     background-color: #e67300;
-    position:fixed;
-    bottom:0;
-    width:100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
 .footer-col{
     flex-basis: auto;
 }

@@ -1,0 +1,22 @@
+.aboutcolumn{
+    flex-basis: auto;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: #e67300;
+    width: 30%;
+    min-width: 300px;
+    margin: 10px auto 10px auto;
+    /*min-height: 300px;*/
+    /*max-height: 800px;*/
+}
+
+.aboutselfie{
+    width: 75%;
+    margin: 5px;
+}
+.abouttext{
+    margin: 5px;
+}
+.youtubetext{
+    margin: 5px;
+}
